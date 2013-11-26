@@ -1,3 +1,15 @@
+/* ajax load  http://stackoverflow.com/questions/1964839/jquery-please-wait-loading-animation */
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { 
+        $body.addClass("loading"); 
+    },
+    ajaxStop: function() { 
+        $body.removeClass("loading"); 
+    }    
+});
+
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height()/2;
 var width = viewportWidth * .9;
