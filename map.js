@@ -1,14 +1,3 @@
-/* ajax load  http://stackoverflow.com/questions/1964839/jquery-please-wait-loading-animation */
-$body = $("body");
-
-$(document).on({
-    ajaxStart: function() { 
-        $body.addClass("loading"); 
-    },
-    ajaxStop: function() { 
-        $body.removeClass("loading"); 
-    }    
-});
 
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height()/2;
@@ -31,7 +20,7 @@ function foo() {
  	var svg = d3.select("article")
 		.append("svg")
 		.attr("width",width)
-		.attr("height",height)
+		.attr("height",height);
 		
 	//draw map
 	var map = svg.selectAll("path")
