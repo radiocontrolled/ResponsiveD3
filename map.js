@@ -13,15 +13,12 @@ var projection = d3.geo.mercator();
 //Define path generator
 var path = d3.geo.path().projection(projection);
 			
-
-function foo() {
- d3.json("canada.json", function(error, json) {
- 
+ d3.json("canada.json", function(json) {
+ 	
  	var svg = d3.select("article")
 		.append("svg")
 		.attr("width",width)
 		.attr("height",height);
-		
 	//draw map
 	var map = svg.selectAll("path")
 		.data(json.features)
@@ -29,10 +26,8 @@ function foo() {
 		.append("path")
 		.attr("d", path)
 		.style("fill", "#1d5b85"); 
- })
-}
+ 	})
 
-foo();
 
 d3.select(window).on('resize', resize);
 
