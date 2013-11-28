@@ -1,8 +1,8 @@
 
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height()/2;
-var width = viewportWidth * .9;
-var height = width/1.75;
+var width = viewportWidth * .97;
+var height = width/1.85;
 
 //Define map projection 
 var projection = d3.geo.mercator();
@@ -25,7 +25,7 @@ var path = d3.geo.path().projection(projection);
 		.enter()
 		.append("path")
 		.attr("d", path)
-		.style("fill", "#1d5b85"); 
+		.style("fill", "#3498db"); 
  	})
 
 
@@ -35,7 +35,7 @@ function resize() {
   
     width = parseInt(d3.select('article').style('width'));
     width = $(window).width() * .9;
-    height = width/1.75;
+    height = width/1.85;
   
    projection
     	.scale([width/3.5])
