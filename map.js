@@ -34,7 +34,7 @@ d3.select(window).on('resize', resize);
 function resize() {
   
     width = parseInt(d3.select('article').style('width'));
-    width = $(window).width() * .9;
+    width = $(window).width() * .97;
     height = width/1.85;
   
    projection
