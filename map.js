@@ -1,4 +1,4 @@
-
+/*http://geoexamples.blogspot.co.uk/2013/02/mapping-with-d3js-canvas-or-svg.html*/
 var viewportWidth = $(window).width();
 var viewportHeight = $(window).height()/2;
 var width = viewportWidth * .97;
