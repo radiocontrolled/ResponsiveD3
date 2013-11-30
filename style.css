@@ -1,6 +1,70 @@
 article{
 	text-align: center!important;
+	position: relative;
 }
 body{
 	background: #eeeeee;
+	font-family: Helvetica!important;
+	color:  #34495E;
+	font-weight: 600;
 }	
+
+.highlight{
+	fill:  #34495E!important;
+}
+
+#tooltip {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        padding: 5px;
+        background-color: #D7DCE0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        pointer-events: none;
+}
+
+#tooltip.hidden {
+        display: none;
+}
+
+#tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+}
+
+/* make sure the territory and province borders are clearly delineated by applying a stroke to the map paths*/
+path{
+	stroke: #eeeeee;
+    stroke-width: 1.4;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  
+	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+
+	#tooltip p {
+	        margin: 0;
+	        font-family: sans-serif;
+	        font-size: 12px;
+	        line-height: 15px;
+	}
+	
+}
