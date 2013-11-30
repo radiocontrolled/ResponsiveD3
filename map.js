@@ -56,7 +56,7 @@ d3.csv("migrants_by_region.csv", function(data) {
 					d3.select(this).classed("highlight",true)
 					d3.select("#tooltip")
 					.style({
-							"left": coordinates[0] + "px",
+							"left": coordinates[0] - 100 + "px",
 							"top": coordinates[1] + "px"
 						})
 						.classed("hidden",false)
